@@ -1,0 +1,28 @@
+on: [push]
+
+name: Forge Tests
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Install submodules
+        run: |
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
+          git submodule update --init --recursive
+
+      - name: Install dependencies
+        run: forge install
+
+      - name: Compile
+        run: forge build
+
+      - name: Run Forge tests
+        run: forge test -vvv

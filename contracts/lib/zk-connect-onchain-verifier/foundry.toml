@@ -1,0 +1,17 @@
+[profile.default]
+optimizer_runs = 1000000
+verbosity = 1
+# via_ir = true
+
+[rpc_endpoints]
+polygon = "${RPC_URL}"
+gnosis = "${RPC_URL}"
+goerli = "${RPC_URL}"
+mumbai = "${RPC_URL}"
+# mainnet = "${RPC_URL}"
+
+[etherscan]
+polygon = { key = "${ETHERSCAN_API_KEY}" }
+gnosis = { key = "${ETHERSCAN_API_KEY}" }
+goerli = { key = "${ETHERSCAN_API_KEY}" }
+mumbai = { key = "${ETHERSCAN_API_KEY}" }

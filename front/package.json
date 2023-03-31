@@ -1,0 +1,55 @@
+{
+  "name": "@my-app/react-app",
+  "version": "1.0.0",
+  "homepage": "./",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@ethersproject/contracts": "^5.6.0",
+    "@ethersproject/providers": "^5.6.0",
+    "@mui/material": "^5.11.15",
+    "@safe-global/safe-core-sdk": "^3.3.2",
+    "@safe-global/safe-ethers-lib": "^1.9.2",
+    "@sismo-core/zk-connect-react": "^0.0.4",
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^17.0.40",
+    "@usedapp/core": "^1.1.5",
+    "ethers": "^5.7.0",
+    "graphql": "^16.3.0",
+    "ipfs-deploy": "^11.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
+    "use-local-storage-state": "^17.3.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "ipfs": "yarn build && ipfs-deploy build/",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  }
+}

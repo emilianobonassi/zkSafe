@@ -1,0 +1,3 @@
+forge-std/=lib/forge-std/src/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+@sismo-core/hydra-s2/=lib/hydra-s2-zkps/package/contracts/

@@ -1,0 +1,8 @@
+@openzeppelin/=node_modules/@openzeppelin/
+@openzeppelin/contracts/=lib/zk-connect-onchain-verifier/lib/openzeppelin-contracts/contracts/
+@sismo-core/hydra-s2/=lib/zk-connect-onchain-verifier/lib/hydra-s2-zkps/package/contracts/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+hydra-s2-zkps/=lib/zk-connect-onchain-verifier/lib/hydra-s2-zkps/
+openzeppelin-contracts/=lib/zk-connect-onchain-verifier/lib/openzeppelin-contracts/
+zk-connect-onchain-verifier/=lib/zk-connect-onchain-verifier/
